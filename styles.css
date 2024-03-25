@@ -1,0 +1,112 @@
+html {
+    background-color: lightgrey;    
+}
+
+header {
+    padding: 20px;
+    color: wheat;
+    text-shadow: 1px 1px 2px black;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    max-width: 80%;
+    background-image: url('images/background.jpg'); /* Replace 'your-background-image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.gallery-item {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-image {
+    max-width: 80%;
+    max-height: 80%;
+    cursor: pointer;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;  
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white !important;    
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    color: red !important;
+}
+
+.navbar a:visited {
+    color: white;
+}
+
+.footer {
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Additional styles for better visibility */
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
